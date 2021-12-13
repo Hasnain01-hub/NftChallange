@@ -4,7 +4,7 @@ import './Punkscard.css';
 const Punkcards = ({id,name,traits,image}) => {
     return (
         <div className="collectioncard">
-            <img src={image} alt="image"/>
+            <img src={image} alt='logo'/>
             <div className="detail">
 
             

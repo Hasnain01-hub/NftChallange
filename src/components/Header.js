@@ -22,7 +22,7 @@ const Header = () => {
                  </div>
                  <div className="headeractions">
                      <div className="themelogo">
-                         <img src={themelogo} className="themeswitch"/>
+                         <img src={themelogo} className="themeswitch" alt='logo'/>
                      </div>
                  </div>
                  <div className="gradientb">get in</div>
