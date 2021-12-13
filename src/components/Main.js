@@ -37,6 +37,7 @@ const Main = ({select,punklistdata}) => {
         <div className="ownerhandle">@hasnainsayyed</div>
         
     </div>
+    
     <div className="ownerlink">
             <img src={instagram} alt=''/>
         </div>
