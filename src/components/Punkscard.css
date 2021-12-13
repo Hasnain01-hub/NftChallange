@@ -1,0 +1,140 @@
+
+.collectioncard{
+    color :white;
+    background-color: #1a1c1e;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    margin-right: 30px;
+}
+.collectioncard> img{
+    width: 100%;
+}
+.eathimage{
+    height: 23px;
+    width: 15px;
+}
+.detail{
+    padding:20px;
+}
+.name{
+    font-size: 20px;
+    font-weight: 900;
+}
+.id{
+    color:#a1a5b0;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.pricecontainer{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.price{
+    margin-left:8px ;
+    font-weight: 600;
+}
+.punklist{
+    display :flex;
+    /* overflow-x: hidden; */
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #a1a5b0;
+}
+.punklist::-webkit-scrollbar{
+    display: none;
+}
+.Main{
+max-height: 50vh;
+}
+.maincontent{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a1a5b0;
+
+}
+.punkhighligt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.25;
+}
+.punkcontainer{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+}
+.punkdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:0.75;
+
+}
+.selectedPunk{
+    object-fit: contain;
+    max-width: min(30vw, 40vh);
+    max-height: 30vw;
+}
+.title{
+    font-size: 66px;
+    font-weight: 800;
+}
+.itemnumber{
+    font-size: 44px;
+    color: #a1a5b0;
+    align-items: center;
+}
+.owner{
+display: flex;
+margin:10px 0;
+height: 50px;
+}
+.owner>div{
+    margin:0 5px;
+}
+.ownerimage{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.ownerimage>img{
+    width: 100%;
+    height: 100%;
+}
+.ownerdetails{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.ownerlink{
+    padding: 12px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #a1a5b0;
+    margin: 0 0 0 10px;
+}
+.ownerlink>img{
+    width: 100%;
+    height: 100%;
+}
+.ownernamehadle,.ownerimage{
+position: relative;
+top:23vh;
+right: 41vw;
+}
+
+.ownerhandle{
+    color: #00befe;
+}
