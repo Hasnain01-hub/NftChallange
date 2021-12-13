@@ -14,11 +14,11 @@ function App() {
   const [select, setselect] = useState(0);
   useEffect(() => {
     const getdata = async () => {
-      var config = {
-        headers: {'Access-Control-Allow-Origin': '*'}
-    };
+    
       const openseadata = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x20178A5E1260779521e5F8594341961aD64C61CD&order_direction=asc",config);
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0x20178A5E1260779521e5F8594341961aD64C61CD&order_direction=asc",{
+          crossdomain: true
+        });
       console.log(openseadata.data.assets);
       setdata(openseadata.data.assets)
       
