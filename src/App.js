@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const getdata = async () => {
     const URL='https://testnets-api.opensea.io/assets?asset_contract_address=0x20178A5E1260779521e5F8594341961aD64C61CD&order_direction=asc';
-      const openseadata = await axios.get(URL, {
+       await axios.get(URL, {
         // method: 'GET',
         headers: {
           'content-type': 'application/json',
@@ -24,7 +24,7 @@ function App() {
       })
         .then(response => {setdata(response.data.assets); console.log(response.data.assets);})
         .catch(error => {
-          throw error;
+          throw console.log(error);
         });
       // console.log(openseadata.data.assets);
       
