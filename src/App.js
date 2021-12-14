@@ -18,7 +18,8 @@ function App() {
        await axios.get(URL, {
         // method: 'GET',
         headers: {
-          'content-type': 'application/json',
+          'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8;application/json',
+          
         },
         // data: exp,
       })
