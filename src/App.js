@@ -14,13 +14,20 @@ function App() {
   const [select, setselect] = useState(0);
   useEffect(() => {
     const getdata = async () => {
-    
-      const openseadata = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x20178A5E1260779521e5F8594341961aD64C61CD&order_direction=asc",{
-          crossdomain: true
+    const URL='https://testnets-api.opensea.io/assets?asset_contract_address=0x20178A5E1260779521e5F8594341961aD64C61CD&order_direction=asc';
+      const openseadata = await axios.get(URL, {
+        // method: 'GET',
+        headers: {
+          'content-type': 'application/json',
+        },
+        // data: exp,
+      })
+        .then(response => {setdata(response.data.assets); console.log(response.data.assets);})
+        .catch(error => {
+          throw error;
         });
-      console.log(openseadata.data.assets);
-      setdata(openseadata.data.assets)
+      // console.log(openseadata.data.assets);
+      
       
     };
     return getdata()
